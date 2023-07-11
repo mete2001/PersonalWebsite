@@ -6,37 +6,273 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Mete Cil | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
     
   
 </head>
 <body>
-   
     
-
+    
    
     <!-- Navigation Bar -->
     <nav class="navigation">
         <ul class="navigation__list">
-            <li class="navigation__item"><a class="navigation__link" href="index.html">Home</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="pages/about.html">About</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="pages/skills.html">Skills</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="pages/projects.html">Projects</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="pages/contact.html">Contact</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#home">Home</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#about">About</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#skills">Skills</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#projects">Projects</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#contact">Contact</a></li>
         </ul>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/metecil/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/mete2001?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="Resume.pdf" target="_blank"><i class="fas fa-file"></i></a> <!-- This is for Resume -->
+        </div>
     </nav>
-   
+    <div class="body-content">
      <!-- Welcome Section -->
-     <section class="welcome">
+     <section id="home">
         <div id="particles-js"></div>
-        <h1 class="welcome__title">Mete Cil</h1>
-        <p class="welcome__description">Fourth year <span>computer science</span> student at University of British Columbia</p>
+        <div class="welcome__content">
+        <h1 class="welcome__title">Hi, I'm <span class="underline">Mete</span></h1>
+        <p class="welcome__description">Software Developer and fourth year <span class="highlighted">Computer Science</span> student at the <a href="https://www.ubc.ca/" target="_blank" class="university-link">University of British Columbia</a></p>
+        </div>
         <script src="particles.js"></script>
         <script src="app.js"></script>
     </section>
+     <!-- About Section -->
+     <section id="about">
+        <div class="about__content">
+            <img class="about__image" src="pictureForWebsite.jpeg" alt="Mete Cil">
+            <div class="about__text-container">
+        <h1 class="about__title">About Me</h1>
+        <p class="about__text">
+            Hello! I'm a fourth-year Computer Science student at the University of British Columbia, currently involved in the co-op program. My experience ranges from working as a Logistics Software Specialist and a Full-Stack Developer to taking on the responsibility of a Safety Lead Hand.
+            <br><br>
+            I have a genuine passion for solving intricate problems, creating user-friendly applications, and introducing innovative ideas into my work. It's in this intersection of technology, creativity, and impact where I believe the magic happens. My goal is to leverage these interests to build solutions that make a difference.
+            <br><br>
+            When I'm not submerged in lines of code, you'll often find me embracing the great outdoors, indulging in various sports, or simply enjoying good times with friends.
+            <br><br>
+            Feel free to explore my portfolio to see my work, or get in touch if you're interested in connecting!
+        </p>
+        <a href="Resume.pdf" class="resume-button" target="_blank">Open Resume</a>
+    </div>
+</div>
+
+
+
+   </section>
+    
+
+    
+    <section id="skills">
+        <div class="skills-container"></div>
+        <h1 class="skills__title">Skills</h1>
+        <div class="grid-container">
+            <div class="grid-item" style="grid-row: 1; grid-column: 1;" id="Button1">
+                <button class="skills__category-button" onclick="showSkills('frontend')">Frontend</button>
+            </div>
+        
+            <div class="grid-item" style="grid-row: 1; grid-column: 2;" id="Box1">
+                
+                <div id="frontend" class="skills__category-content">
+                    <h2 class="skills__category-title">Frontend</h2>
+                    <div id="frontend" class="skills__category-content"> 
+                        <ul class="skills__list"> <li class="skills__item">JavaScript</li> <li class="skills__item">React Native</li> <li class="skills__item">HTML</li> <li class="skills__item">CSS</li> <li class="skills__item">WebGL</li> <li class="skills__item">Redux</li> <li class="skills__item">Swift</li> </ul> 
+                    </div>
+                </div>
+            </div>
+        
+            <div class="grid-item" style="grid-row: 2; grid-column: 1;" id="">
+                <button id="myButton" class="skills__category-button" onclick="showSkills('backend')">Backend</button>
+            </div>
+        
+            <div class="grid-item" style="grid-row: 2; grid-column: 2;" id="Box2">
+               
+                <div id="backend" class="skills__category-content">
+                    <h2 class="skills__category-title">Backend</h2>
+                    <ul class="skills__list">
+                        <li class="skills__item">Java</li>
+                        <li class="skills__item">Python</li>
+                        <li class="skills__item">PostgreSQL</li>
+                        <li class="skills__item">C++</li>
+                        <li class="skills__item">MongoDB</li>
+                        <li class="skills__item">Node.js</li>
+                        <li class="skills__item">SQL</li>
+                        <li class="skills__item">Kotlin</li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="grid-item" style="grid-row: 3; grid-column: 1;">
+                <button id="myButton" class="skills__category-button" onclick="showSkills('tools')">Tools</button>
+            </div>
+        
+            <div class="grid-item" style="grid-row: 3; grid-column: 2;" id="Box3">
+                
+                <div id="tools" class="skills__category-content">
+                    <h2 class="skills__category-title">Tools</h2>
+                    <ul class="skills__list">
+                        <li class="skills__item">Agile</li>
+                        <li class="skills__item">VSCode</li>
+                        <li class="skills__item">Heroku</li>
+                        <li class="skills__item">Bash</li>
+                        <li class="skills__item">Docker</li>
+                        <li class="skills__item">Git</li>
+                        <li class="skills__item">Scrum</li>
+                        <li class="skills__item">Tableau</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+   
+    
+    <!-- Projects Section -->
+    <section id="projects">
+        <h1 class="skills__title">Projects</h1>
+        <div class="project">
+        
+            
+
+            <img class="project__image" src="3d.png" alt="3D Super Bug Zapper">
+            <div class="project__details">
+            <h2 class="project__title">3D Super Bug Zapper</h2>
+            <div class="project__tech-stack">
+                <span class="tech-stack__item">WebGL</span>
+                <span class="tech-stack__item">JavaScript</span>
+                <span class="tech-stack__item">HTML</span>
+            </div>
+            <p class="project__description">
+                3D Super Bug Zapper is a riveting game that sets players inside an engaging 3D universe. The interactive mechanics allow players to rotate a vibrant sphere, zapping away at bacterial invaders in real-time. While it provides an exciting gaming experience, it's the intricate matrix transformations working behind the scenes that drive the dynamic 3D graphics. This project stands as a testament to how complex mathematics can seamlessly intersect with interactive gameplay, creating an immersive experience for users.</p>
+            <a href="https://github.com/mete2001/3D_SuperBugZapper" target="_blank"><button class="project__button">Source Code</button></a>
+        </div>
+    </div>
+        <div class="project">
+            <img class="project__image" src="gameofamazons.png" alt="AI Game Player for the Game of Amazons">
+            <div class="project__details">
+            <h2 class="project__title">AI GAME PLAYER FOR THE GAME OF AMAZONS</h2>
+            <div class="project__tech-stack">
+                <span class="tech-stack__item">Java</span>
+                <span class="tech-stack__item">AI algorithms (Monte Carlo Tree Search)</span>
+                <span class="tech-stack__item">GUI programming</span>
+            </div>
+            <p class="project__description">
+                AI for the game of Amazons was an exploration into artificial intelligence in gaming. Our team constructed an AI player adept at strategizing within the game's elaborate rules. The AI's moves stem from a Monte Carlo search tree, and an action factory manages the game state, both systems I played a significant role in developing. The project, built in Java, showcases my strengths in AI principles, problem-solving, and team collaboration, creating an AI capable of competing confidently.</p>
+            <a href="https://github.com/mete2001/GameOfAmazons_Team13" target="_blank"><button class="project__button">Source Code</button></a>
+        </div>
+    </div>
+        <div class="project">
+            <img class="project__image" src="library.png" alt="Library System">
+            <div class="project__details">
+            <h2 class="project__title">LIBRARY SYSTEM</h2>
+            <div class="project__tech-stack">
+                <span class="tech-stack__item">HTML/CSS</span>
+                <span class="tech-stack__item">JSP</span>
+                <span class="tech-stack__item">jQuery</span>
+                <span class="tech-stack__item">SQL</span>
+                <span class="tech-stack__item">Open Library & New York Times API</span>
+                <span class="tech-stack__item">JUnit</span>
+            </div>
+            
+            <p class="project__description">
+                The online library system is a digital hub for book lovers and library staff. It offers user-friendly browsing and precise book search using data from Open Library and New York Times APIs. Behind the interface, SQL queries and meticulously tested functionalities ensure system robustness. Notably, I developed the library class, shaping the system's structure and functions. This project is a fusion of a functional system and an enjoyable user experience for all library users.</p>
+            <a href="https://github.com/mete2001/LibrarySystem2.0" target="_blank"><button class="project__button">Source Code</button></a>
+        </div>
+    </div>
+        <div class="project">
+            <img class="project__image" src="grandfinder.png" alt="Grandfinder">
+            <div class="project__details">
+            <h2 class="project__title">GRANDFINDER</h2>
+            <div class="project__tech-stack">
+                <span class="tech-stack__item">Java</span>
+                <span class="tech-stack__item">Kotlin</span>
+                <span class="tech-stack__item">Firebase SDK</span>
+                <span class="tech-stack__item">FirebaseUI</span>
+            </div>
+            <p class="project__description">
+                Grandfinder, a user-friendly Android app, serves as a reliable communication tool for the elderly. Behind its simple interface lies FirebaseUI integration and Firebase Cloud Messaging SDK, enabling diverse log-in methods and seamless messaging. Our design, incorporating enlarged buttons and consistent accent colors, enhances accessibility. Every feature, from profile management to notifications, is created with the goal of easy use for all ages. Working on Grandfinder honed my skills in Android development, Java, and Kotlin, while emphasizing empathetic technology design.</p>
+            <a href="https://github.com/mete2001/Grandfinder" target="_blank"><button class="project__button">Source Code</button></a>
+        </div>
+    </div>
+        
+        
+        <div class="project">
+            <img class="project__image" src="DirtLand.png" alt="DirtLand">
+            <div class="project__details">
+            <h2 class="project__title">DIRTLAND</h2>
+            <div class="project__tech-stack">
+                <span class="tech-stack__item">HTML</span>
+                <span class="tech-stack__item">CSS</span>
+                <span class="tech-stack__item">JavaScript</span>
+                <span class="tech-stack__item">SQL</span>
+                <span class="tech-stack__item">Docker</span>
+                <span class="tech-stack__item">UML</span>
+            </div>
+            <p class="project__description">
+                DirtLand is a digital marketplace offering unique soils worldwide. Each product is managed within a secure Docker database, and fetched using tailored SQL queries. The user-friendly interface is the result of HTML, CSS, and JavaScript integration. I designed the SQL tables structure using UML diagrams, linking all product data meticulously. DirtLand demonstrates our team's prowess in full-stack web development, coupling creativity with technicality to deliver a unique e-commerce experience.</p>
+            <a href="https://github.com/mete2001/DirtLand" target="_blank"><button class="project__button">Source Code</button></a>
+        </div>
+    </div>
+    </section>
+    
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="_replyto" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+                <p id="form-message"></p>  <!-- New element for displaying feedback -->
+            </form>
+            
+            <script>
+                const form = document.getElementById('contact-form');
+                const formMessage = document.getElementById('form-message');
+            
+                form.addEventListener('submit', function(e) {
+                    // prevent the form from submitting the default way
+                    e.preventDefault();
+            
+                    // use the Fetch API to post the form data
+                    fetch('https://formspree.io/f/mgejwbaq', {
+                        method: 'POST',
+                        body: new FormData(form),
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    })
+                    .then(response => {
+                        if(response.status === 200) {
+                            // show success message
+                            formMessage.textContent = 'Message sent successfully!';
+                            formMessage.style.color = 'green';
+                        } else {
+                            // show error message
+                            formMessage.textContent = 'Oops! Something went wrong.';
+                            formMessage.style.color = 'red';
+                        }
+                        // Reset the form fields
+                        form.reset();
+                    });
+                });
+            </script>
+            
+        
+    </section>
+    
+</div>
+<script src="main.js"></script>
+<script src="scroll.js"></script>
     
     
-    
-    
+
 </body>
 </html>
 
